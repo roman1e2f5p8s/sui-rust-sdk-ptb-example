@@ -1,0 +1,15 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sui-sdk = { git = "https://github.com/mystenlabs/sui", package = "sui-sdk", rev = "testnet-v1.21.0" }
+sui-types = { git = "https://github.com/mystenlabs/sui", package = "sui-types", rev = "testnet-v1.21.0" }
+sui-keys = { git = "https://github.com/mystenlabs/sui", package = "sui-keys", rev = "testnet-v1.21.0" }
+sui-config = { git = "https://github.com/mystenlabs/sui", package = "sui-config", rev = "testnet-v1.21.0" }
+shared-crypto = { git = "https://github.com/mystenlabs/sui", package = "shared-crypto", rev = "testnet-v1.21.0" }
+tokio = { version = "1.2", features = ["full"] }
+anyhow = "1.0"
